@@ -118,7 +118,7 @@ async function fetchSuperHero(hid)
     {
         if(localStorage.getItem(`${hid}`)==null) //add only if the  hero is not present in favourites
         {
-            localStorage.setItem(`${hid}`,`${hid}`);
+            localStorage.setItem(`${hid}`,`${hid}`);//for making the data persistent, we make use of local Storage
             console.log(localStorage);
         }
         else
