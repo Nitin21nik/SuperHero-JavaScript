@@ -109,7 +109,7 @@ async function fetchSuperHero(hid)
 
     let favBtn=document.createElement('button'); //adding the fav button to each hero
     favBtn.innerHTML="+ Add To Favourites";
-    favBtn.style.cssText="display:inline-block; border:none; margin:auto; height:3rem; margin-top:1rem; width:100%; font-weight:bolder; color:white; background-color:blue; font-size:1.2rem";
+    favBtn.style.cssText="display:inline-block; margin:auto; height:3rem; margin-top:1rem; width:100%; font-weight:bolder; color:white; background-color:blue; font-size:1.2rem";
 
     bio.appendChild(favBtn);   
 
@@ -120,7 +120,6 @@ async function fetchSuperHero(hid)
         {
             localStorage.setItem(`${hid}`,`${hid}`);//for making the data persistent, we make use of local Storage
             console.log(localStorage);
-            alert("SuperHero is added to Your Favourites List");
         }
         else
         {
