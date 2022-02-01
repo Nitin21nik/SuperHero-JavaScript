@@ -120,6 +120,7 @@ async function fetchSuperHero(hid)
         {
             localStorage.setItem(`${hid}`,`${hid}`);//for making the data persistent, we make use of local Storage
             console.log(localStorage);
+            alert("SuperHero is added to Your Favourites List");
         }
         else
         {
